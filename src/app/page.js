@@ -2,8 +2,10 @@ import About from "@/components/home/About";
 import CertificatesSection from "@/components/home/CertificatesSection";
 import CertificationSection from "@/components/home/CertificationSection";
 import ChannelPartners from "@/components/home/ChannelPartners";
+import ClientsOrbitSection from "@/components/home/ClientsOrbitSection";
 import FAQSection from "@/components/home/FAQSection";
 import Hero from "@/components/home/Hero";
+import ManufacturingProcess from "@/components/home/ManufacturingProcess";
 import MeghaInteractiveSection from "@/components/home/MeghaInteractiveSection";
 import ServicesSection from "@/components/home/MeghaShowcase";
 import ProductMarquee from "@/components/home/ProductMarquee";
@@ -27,9 +29,11 @@ export default function Home() {
       <ProjectsSection />
       <MeghaInteractiveSection />
       <CertificationSection />
+      <ManufacturingProcess />
       <WhyChooseUs />
       <CertificatesSection />
       <FAQSection />
+      <ClientsOrbitSection />
       <TestimonialsSection />
     </>
   );
