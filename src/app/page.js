@@ -3,6 +3,7 @@ import CertificatesSection from "@/components/home/CertificatesSection";
 import CertificationSection from "@/components/home/CertificationSection";
 import ChannelPartners from "@/components/home/ChannelPartners";
 import ClientsOrbitSection from "@/components/home/ClientsOrbitSection";
+import CubicleHotspots from "@/components/home/CubicleHotspots";
 import FAQSection from "@/components/home/FAQSection";
 import Hero from "@/components/home/Hero";
 import ManufacturingProcess from "@/components/home/ManufacturingProcess";
@@ -32,6 +33,7 @@ export default function Home() {
       <ManufacturingProcess />
       <WhyChooseUs />
       <CertificatesSection />
+      <CubicleHotspots />
       <FAQSection />
       <ClientsOrbitSection />
       <TestimonialsSection />
