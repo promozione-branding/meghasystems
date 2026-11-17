@@ -14,6 +14,7 @@ import {
     ArrowRight,
 } from "lucide-react";
 import gsap from "gsap";
+import { allProducts } from "@/utils/data";
 
 const navLinks = [
     { name: "Home", href: "/" },
@@ -22,6 +23,10 @@ const navLinks = [
         name: "Our Products",
         href: "/products",
         children: [
+            ...allProducts.map((category) => ({
+                name: category.categoryName,
+                href: `/products#${category.slug}`,
+            })),
             { name: "All Products", href: "/products" },
         ],
     },
