@@ -13,8 +13,8 @@ const CUBICLE_LAYERS = [
         title: "SS Adjustable Leg",
         subtitle: "Adjustable stainless steel support leg",
         image: "/hardware/ss-adjustable-leg.webp",
-        x: "46%",
-        y: "95%",
+        x: "54.5%",
+        y: "85%",
     },
     {
         id: 1,
@@ -22,7 +22,7 @@ const CUBICLE_LAYERS = [
         title: "Door Stopper",
         subtitle: "Floor-mounted door protection stopper",
         image: "/hardware/door-stopper.webp",
-        x: "48%",
+        x: "57%",
         y: "63%",
     },
     {
@@ -32,7 +32,7 @@ const CUBICLE_LAYERS = [
         subtitle: "Strong aluminum top support",
         image: "/hardware/top-rail.webp",
         x: "50%",
-        y: "8%",
+        y: "18%",
     },
     {
         id: 3,
@@ -40,7 +40,7 @@ const CUBICLE_LAYERS = [
         title: "U Channel",
         subtitle: "Silver-Ion Surface Shield",
         image: "/hardware/u-channel.webp",
-        x: "82%",
+        x: "94%",
         y: "40%",
     },
     {
@@ -49,8 +49,8 @@ const CUBICLE_LAYERS = [
         title: "Indicator Lock",
         subtitle: "Secure internal privacy locking mechanism",
         image: "/hardware/indicator-lock.webp",
-        x: "70%",
-        y: "56%",
+        x: "80%",
+        y: "53%",
     },
     {
         id: 5,
@@ -58,8 +58,8 @@ const CUBICLE_LAYERS = [
         title: "Door Knob",
         subtitle: "Durable stainless steel door knob",
         image: "/hardware/door-knob.webp",
-        x: "26%",
-        y: "56%",
+        x: "19%",
+        y: "53%",
     },
 ];
 
