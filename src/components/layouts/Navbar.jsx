@@ -41,7 +41,9 @@ export default function Navbar() {
     const pathname = usePathname();
     const navbarRef = useRef(null);
     const mobileRef = useRef(null);
-
+    if (pathname.startsWith("/admin")) {
+        return null; // Don't render the navbar on admin or dashboard pages
+    }
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
     const [openDropdown, setOpenDropdown] = useState(null);

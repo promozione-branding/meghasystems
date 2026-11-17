@@ -1,8 +1,11 @@
-import React from 'react'
-import Projects from './Projects'
+import ProjectsClient from "./Projects";
 
-export default function page() {
-    return (
-        <Projects />
-    )
+export const metadata = {
+    title: "Our Projects | Megha Systems",
+    description:
+        "Explore completed restroom cubicle installations and commercial washroom projects by Megha Systems.",
+};
+
+export default function Projects() {
+    return <ProjectsClient />;
 }

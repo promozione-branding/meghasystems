@@ -14,6 +14,7 @@ import {
     Mail,
 } from "lucide-react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,7 +23,7 @@ const QUICK_LINKS = [
     { label: "About Us", href: "/about-us" },
     { label: "Products", href: "/products" },
     { label: "Projects", href: "/projects" },
-    { label: "Certificates", href: "/certificates" },
+    { label: "Articles", href: "/our-articles" },
     { label: "Contact Us", href: "/contact-us" },
 ];
 
@@ -67,8 +68,11 @@ function FooterLinkColumn({ title, links }) {
 }
 
 export default function Footer() {
+    const pathname = usePathname();
     const footerRef = useRef(null);
-
+    if (pathname.startsWith("/admin")) {
+        return null; // Don't render the navbar on admin or dashboard pages
+    }
     useEffect(() => {
         const ctx = gsap.context(() => {
             gsap.from(".footer-reveal", {

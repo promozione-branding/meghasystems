@@ -242,7 +242,7 @@ export default function ContactClient() {
     <main ref={rootRef}
       className="min-h-screen overflow-hidden bg-white text-[var(--primary)]"
     >
-      <section className="relative flex min-h-[570px] items-center overflow-hidden bg-[var(--primary)] pt-28 text-white lg:min-h-[650px]">
+      <section className="relative flex min-h-[570px] items-center overflow-hidden bg-[var(--primary)] pt-20 text-white lg:min-h-[500px]">
         {/* Replace with your own hero image */}
         <div className="absolute inset-0">
           <Image
@@ -313,11 +313,11 @@ export default function ContactClient() {
             Contact <span className="text-[var(--secondary)]">Us.</span>
           </h1>
 
-          <p className="contact-hero-reveal mt-7 max-w-[600px] text-base leading-8 text-white/75 sm:text-lg">
+          {/* <p className="contact-hero-reveal mt-7 max-w-[600px] text-base leading-8 text-white/75 sm:text-lg">
             Have a project in mind? Connect with Megha Systems
             for innovative, durable and beautifully designed
             restroom cubicle solutions.
-          </p>
+          </p> */}
 
           <div className="contact-hero-reveal mt-9 flex flex-wrap gap-3">
             <Link

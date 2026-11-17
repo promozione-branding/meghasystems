@@ -243,8 +243,9 @@ export default function About() {
             ref={rootRef}
             className="overflow-hidden bg-[var(--background)] text-[var(--text-primary)]"
         >
-            <section className="about-hero relative flex min-h-[680px] items-center justify-center overflow-hidden bg-[var(--primary)] px-5 pb-24 pt-36 text-white sm:min-h-[500px]">
-                {/* Background image */}
+            <section className="about-hero relative flex min-h-[680px] items-center overflow-hidden bg-[var(--primary)] px-5 pb-15 pt-36 text-white sm:min-h-[600px] sm:px-8 lg:min-h-[500px] lg:px-12">
+
+                {/* Background image - unchanged */}
                 <div className="about-hero-bg absolute -inset-y-[15%] inset-x-0">
                     <Image
                         src={HERO_IMAGE}
@@ -257,8 +258,12 @@ export default function About() {
                 </div>
 
                 {/* Dark overlay */}
-                <div className="absolute inset-0 bg-[#101820]/25" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#101820]/85 via-transparent to-[#101820]/30" />
+                <div className="absolute inset-0 bg-[#101820]/15" />
+
+                {/* Gradient adjusted for left-aligned text readability */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[#101820]/50 via-[#101820]/20 to-transparent" />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-[#101820]/30 via-transparent to-[#101820]/10" />
 
                 {/* Fine grid */}
                 <div
@@ -270,51 +275,63 @@ export default function About() {
                     }}
                 />
 
-                <div className="relative z-10 mx-auto max-w-[1100px] text-center">
-                    <div className="about-hero-item mb-5 flex items-center justify-center gap-4">
-                        <span className="h-px w-10 bg-[var(--secondary)]" />
-                        <span className="text-xs font-semibold uppercase tracking-[0.28em] text-white/85">
-                            Welcome to Megha Systems
-                        </span>
-                        <span className="h-px w-10 bg-[var(--secondary)]" />
-                    </div>
+                {/* Content */}
+                <div className="relative z-10 mx-auto w-full max-w-[1500px]">
 
-                    <h1 className="about-hero-item text-[clamp(3.4rem,7vw,7rem)] font-semibold leading-[0.98] tracking-[-0.025em]">
-                        Spaces Designed
-                        <br />
-                        <span className="text-[var(--secondary)]">
-                            To Last.
-                        </span>
-                    </h1>
+                    <div className="max-w-[850px] text-left">
 
-                    <p className="about-hero-item mx-auto mt-8 max-w-[650px] text-sm leading-8 text-white/80 sm:text-base">
-                        Since 2012, creating modern, durable, and thoughtfully
-                        engineered restroom cubicle solutions for spaces that
-                        matter.
-                    </p>
+                        {/* Eyebrow */}
+                        <div className="about-hero-item mb-6 flex items-center gap-4">
+                            <span className="h-px w-12 bg-[var(--secondary)]" />
 
-                    <div className="about-hero-item mt-10 flex flex-wrap items-center justify-center gap-4">
-                        <Link
-                            href="/contact-us"
-                            className="group inline-flex items-center gap-4 rounded-full bg-[var(--secondary)] py-2 pl-7 pr-2 text-sm font-semibold text-white transition-colors hover:bg-white hover:text-[var(--primary)]"
-                        >
-                            Start Your Project
-
-                            <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[var(--primary)] transition-transform group-hover:rotate-45 group-hover:bg-[var(--primary)] group-hover:text-white">
-                                <ArrowUpRight size={19} />
+                            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-white/85">
+                                Welcome to Megha Systems
                             </span>
-                        </Link>
+                        </div>
 
-                        <a
-                            href="#our-journey"
-                            className="group inline-flex items-center gap-3 rounded-full border border-white/35 px-7 py-4 text-sm font-semibold text-white transition-colors hover:border-white hover:bg-white/10"
-                        >
-                            Explore Our Journey
-                            <ArrowDown
-                                size={17}
-                                className="transition-transform group-hover:translate-y-1"
-                            />
-                        </a>
+                        {/* Heading */}
+                        <h1 className="about-hero-item text-[clamp(3.4rem,7vw,7rem)] font-semibold leading-[1.02] tracking-[-0.04em]">
+                            Spaces Designed
+                            <br />
+                            <span className="text-[var(--secondary)]">
+                                To Last.
+                            </span>
+                        </h1>
+
+                        {/* Description */}
+                        {/* <p className="about-hero-item mt-7 max-w-[620px] text-sm leading-8 text-white/80 sm:text-base lg:text-lg">
+                            Since 2012, creating modern, durable, and thoughtfully
+                            engineered restroom cubicle solutions for spaces that
+                            matter.
+                        </p> */}
+
+                        {/* Buttons */}
+                        <div className="about-hero-item mt-10 flex flex-wrap items-center justify-start gap-4">
+
+                            <Link
+                                href="/contact-us"
+                                className="group inline-flex items-center gap-4 rounded-full bg-[var(--secondary)] py-2 pl-7 pr-2 text-sm font-semibold text-white transition-colors hover:bg-white hover:text-[var(--primary)]"
+                            >
+                                Start Your Project
+
+                                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[var(--primary)] transition-all group-hover:rotate-45 group-hover:bg-[var(--primary)] group-hover:text-white">
+                                    <ArrowUpRight size={19} />
+                                </span>
+                            </Link>
+
+                            <a
+                                href="#our-journey"
+                                className="group inline-flex items-center gap-3 rounded-full border border-white/35 px-7 py-4 text-sm font-semibold text-white transition-colors hover:border-white hover:bg-white/10"
+                            >
+                                Explore Our Journey
+
+                                <ArrowDown
+                                    size={17}
+                                    className="transition-transform group-hover:translate-y-1"
+                                />
+                            </a>
+
+                        </div>
                     </div>
                 </div>
             </section>
