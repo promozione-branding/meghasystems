@@ -283,7 +283,7 @@ export default function ChannelPartners() {
             ref={sectionRef}
             id="channel-partners"
             aria-labelledby="channel-partners-title"
-            className="relative overflow-hidden bg-[#f8faf9] py-10 sm:py-12 lg:py-16"
+            className="relative overflow-hidden bg-[#f8faf9] py-10 sm:py-12 border border-[var(--secondary)]/40"
         >
             {/* Background decoration */}
             <div
@@ -304,17 +304,17 @@ export default function ChannelPartners() {
                 }}
             />
 
-            <div className="relative mx-auto grid max-w-[1600px] items-center gap-12 pl-5 pr-0 sm:pl-8 lg:grid-cols-[0.85fr_2fr] lg:gap-12 lg:pl-12">
+            <div className="relative mx-auto grid max-w-[1600px] items-center gap-12 pl-5 pr-0 sm:pl-8 lg:grid-cols-[0.60fr_2fr] lg:gap-12 lg:pl-12">
                 {/* LEFT CONTENT */}
-                <div className="relative z-10 flex min-h-[210px] max-w-[400px] items-start pr-5 sm:pr-8 lg:pr-0">
+                <div className="relative z-10 flex max-w-[350px] items-center pr-5 sm:pr-8 lg:pr-0">
 
                     {/* Cubicle SVG - fixed background position */}
-                    <div
+                    {/* <div
                         aria-hidden="true"
                         className="pointer-events-none absolute -bottom-16 -right-2 z-0 h-[190px] w-[270px] sm:h-[180px] sm:w-[300px]"
                     >
                         <AnimatedPartnerSVG />
-                    </div>
+                    </div> */}
 
                     <div className="relative z-10 w-full">
                         <div className="partner-label mb-6 flex items-center gap-3">

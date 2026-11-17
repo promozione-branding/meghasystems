@@ -27,7 +27,7 @@ export default function Home() {
       <ProductShowcase />
       <ChannelPartners />
       <ProjectsSection />
-      <MeghaInteractiveSection />
+      {/* <MeghaInteractiveSection /> */}
       <CertificationSection />
       <ManufacturingProcess />
       <WhyChooseUs />

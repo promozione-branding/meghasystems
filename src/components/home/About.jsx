@@ -219,10 +219,10 @@ export default function About() {
                     </div>
 
                     {/* Heading */}
-                    <h2 className="about-reveal max-w-[800px] text-[clamp(37px,4vw,66px)] font-semibold leading-[1.1] tracking-[-0.045em] text-[var(--primary)]">
+                    <h2 className="about-reveal max-w-[800px] text-[clamp(37px,4vw,66px)] font-semibold leading-[1] tracking-[-0.045em] text-[var(--primary)]">
                         Toilet Cubicle Partition,
                         <br />
-                        <span className="font-medium italic text-[var(--secondary)]">
+                        <span className="text-[var(--secondary)]">
                             Built to Perform.
                         </span>
                     </h2>
