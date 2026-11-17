@@ -38,76 +38,8 @@ import CertificatesSection from "@/components/home/CertificatesSection";
 
 gsap.registerPlugin(ScrollTrigger);
 
-/*
-  Replace these paths with your actual images/video.
-
-  All assets must be inside the public folder:
-  public/about/hero.webp
-  public/about/about-video.mp4
-  public/about/industry-*.webp
-*/
-
 const HERO_IMAGE = "/products/Neo.webp";
 const ABOUT_VIDEO = "/video/CLIP 4 COMPRESSED.mp4";
-
-const JOURNEY = [
-    {
-        year: "2026",
-        label: "Today & Beyond",
-        title: "Continuing to Build Better Spaces",
-        description:
-            "Megha Systems continues to focus on innovative restroom cubicle solutions, quality workmanship, and dependable project delivery.",
-        number: "01",
-    },
-    {
-        year: "2024",
-        label: "Growing Stronger",
-        title: "Expanding Our Capabilities",
-        description:
-            "Continuing to improve product quality, manufacturing processes, and the solutions offered to our clients.",
-        number: "02",
-    },
-    {
-        year: "2022",
-        label: "Product Development",
-        title: "Solutions for Modern Spaces",
-        description:
-            "Focusing on versatile cubicle systems suited to contemporary commercial and institutional requirements.",
-        number: "03",
-    },
-    {
-        year: "2020",
-        label: "Our Commitment",
-        title: "Designed for Lasting Performance",
-        description:
-            "Maintaining a strong focus on precision, durability, material quality, and installation standards.",
-        number: "04",
-    },
-    {
-        year: "2018",
-        label: "Building Expertise",
-        title: "Refining Our Craft",
-        description:
-            "Strengthening our expertise in restroom partition design, manufacturing, and installation.",
-        number: "05",
-    },
-    {
-        year: "2015",
-        label: "Early Development",
-        title: "Laying a Strong Foundation",
-        description:
-            "Developing our approach to reliable restroom solutions and building lasting client relationships.",
-        number: "06",
-    },
-    {
-        year: "2012",
-        label: "The Beginning",
-        title: "Where Our Story Began",
-        description:
-            "Megha Systems was established with a vision to deliver high-quality toilet cubicle partitions for commercial and institutional spaces.",
-        number: "07",
-    },
-];
 
 const INDUSTRIES = [
     {
@@ -630,7 +562,7 @@ export default function About() {
 
                             return (
                                 <SwiperSlide key={industry.title}>
-                                    <div className="group relative h-[440px] overflow-hidden rounded-[24px] bg-[var(--primary)] sm:h-[490px]">
+                                    <div className="group relative h-[400px] overflow-hidden rounded-[24px] bg-[var(--primary)]">
                                         <Image
                                             src={industry.image}
                                             alt={industry.title}
@@ -653,20 +585,20 @@ export default function About() {
                                         </div>
 
                                         {/* Bottom */}
-                                        <div className="absolute bottom-0 left-0 right-0 p-7 text-white">
+                                        <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
                                             <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-white/20 bg-white/10 backdrop-blur-md">
                                                 <Icon size={23} strokeWidth={1.5} />
                                             </div>
 
-                                            <h3 className="text-[27px] font-semibold leading-tight tracking-[-0.045em]">
+                                            <h3 className="text-[28px] font-semibold leading-tight tracking-[-0.045em]">
                                                 {industry.title}
                                             </h3>
 
-                                            <p className="mt-3 max-w-[310px] text-sm leading-6 text-white/70">
+                                            <p className="mt-1 max-w-[310px] text-sm leading-5 text-white/70">
                                                 {industry.description}
                                             </p>
 
-                                            <div className="mt-6 flex items-center justify-between border-t border-white/20 pt-5">
+                                            {/* <div className="mt-6 flex items-center justify-between border-t border-white/20 pt-5">
                                                 <span className="text-xs font-semibold uppercase tracking-[0.15em] text-[var(--secondary)]">
                                                     Explore Solutions
                                                 </span>
@@ -675,7 +607,7 @@ export default function About() {
                                                     size={20}
                                                     className="transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1"
                                                 />
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </SwiperSlide>
