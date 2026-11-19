@@ -63,11 +63,11 @@ function FAQCard({ item, index, active, onToggle }) {
     return (
         <div
             className={`faq-card group relative overflow-hidden rounded-[20px] border bg-[var(--surface)] transition-all duration-500 ${isOpen
-                ? "border-[var(--secondary)] shadow-[0_15px_35px_rgba(0,0,0,0.07)]"
+                ? "border-[var(--primary)] shadow-[0_15px_35px_rgba(0,0,0,0.07)]"
                 : "border-[var(--border-color)] shadow-[0_8px_24px_rgba(0,0,0,0.035)]"
                 }`}
         >
-            <div className="absolute inset-y-0 left-0 w-[4px] bg-[var(--secondary)]" />
+            <div className="absolute inset-y-0 left-0 w-[4px] bg-[var(--primary)]" />
 
             <button
                 type="button"
@@ -212,7 +212,7 @@ export default function FAQSection() {
                         />
 
                         {/* ROTATING RING */}
-                        <div className="faq-rotating-ring absolute inset-[5%] rounded-full border-[15px] border-dashed border-[var(--secondary)]/70 border-r-[var(--accent)] border-b-[var(--accent)]" />
+                        <div className="faq-rotating-ring absolute inset-[5%] rounded-full border-[15px] border-dashed border-[var(--primary)]/70 border-r-[var(--primary)] border-b-[var(--primary)]" />
 
                         {/* INNER IMAGE */}
                         <div className="relative z-10 h-[72%] w-[72%] overflow-hidden rounded-full border-[8px] border-white shadow-[0_20px_60px_rgba(0,0,0,0.13)]">
@@ -226,27 +226,27 @@ export default function FAQSection() {
                         </div>
 
                         {/* FLOATING ICONS */}
-                        <div className="absolute left-[8%] top-[15%] z-20 flex h-14 w-14 items-center justify-center rounded-full border-[4px] border-white bg-[var(--secondary)] text-white shadow-lg">
+                        <div className="absolute left-[8%] top-[15%] z-20 flex h-14 w-14 items-center justify-center rounded-full border-[4px] border-white bg-[var(--primary)] text-white shadow-lg">
                             <Package size={23} />
                         </div>
 
-                        <div className="absolute right-[7%] top-[17%] z-20 flex h-14 w-14 items-center justify-center rounded-full border-[4px] border-white bg-[var(--accent)] text-white shadow-lg">
+                        <div className="absolute right-[7%] top-[17%] z-20 flex h-14 w-14 items-center justify-center rounded-full border-[4px] border-white bg-[var(--primary)] text-white shadow-lg">
                             <Settings size={23} />
                         </div>
 
-                        <div className="absolute left-[1%] top-[48%] z-20 flex h-14 w-14 items-center justify-center rounded-full border-[4px] border-white bg-[var(--accent)] text-white shadow-lg">
+                        <div className="absolute left-[1%] top-[48%] z-20 flex h-14 w-14 items-center justify-center rounded-full border-[4px] border-white bg-[var(--primary)] text-white shadow-lg">
                             <Layers size={23} />
                         </div>
 
-                        <div className="absolute right-[1%] top-[48%] z-20 flex h-14 w-14 items-center justify-center rounded-full border-[4px] border-white bg-[var(--secondary)] text-white shadow-lg">
+                        <div className="absolute right-[1%] top-[48%] z-20 flex h-14 w-14 items-center justify-center rounded-full border-[4px] border-white bg-[var(--primary)] text-white shadow-lg">
                             <Wrench size={23} />
                         </div>
 
-                        <div className="absolute bottom-[10%] left-[12%] z-20 flex h-14 w-14 items-center justify-center rounded-full border-[4px] border-white bg-[var(--secondary)] text-white shadow-lg">
+                        <div className="absolute bottom-[10%] left-[12%] z-20 flex h-14 w-14 items-center justify-center rounded-full border-[4px] border-white bg-[var(--primary)] text-white shadow-lg">
                             <ShieldCheck size={23} />
                         </div>
 
-                        <div className="absolute bottom-[10%] right-[12%] z-20 flex h-14 w-14 items-center justify-center rounded-full border-[4px] border-white bg-[var(--accent)] text-white shadow-lg">
+                        <div className="absolute bottom-[10%] right-[12%] z-20 flex h-14 w-14 items-center justify-center rounded-full border-[4px] border-white bg-[var(--primary)] text-white shadow-lg">
                             <Headphones size={23} />
                         </div>
                     </div>

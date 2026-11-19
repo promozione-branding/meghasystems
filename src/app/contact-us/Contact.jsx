@@ -310,7 +310,7 @@ export default function ContactClient() {
           </div>
 
           <h1 className="contact-hero-reveal max-w-[850px] text-[clamp(3.8rem,8vw,8rem)] font-semibold leading-[0.98] tracking-[-0.025em]">
-            Contact <span className="text-[var(--secondary)]">Us.</span>
+            Contact <span className="text-[]">Us.</span>
           </h1>
 
           {/* <p className="contact-hero-reveal mt-7 max-w-[600px] text-base leading-8 text-white/75 sm:text-lg">

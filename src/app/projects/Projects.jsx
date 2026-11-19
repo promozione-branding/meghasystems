@@ -151,10 +151,27 @@ export default function ProjectsClient() {
         <main className="min-h-screen bg-white text-[var(--primary)]">
             <section
                 ref={heroRef}
-                className="relative overflow-hidden bg-[var(--primary)] pb-20 pt-32 text-white lg:pb-15 lg:pt-40"
+                className="relative isolate overflow-hidden bg-[var(--primary)] pb-20 pt-32 text-white lg:pb-15 lg:pt-40"
             >
-                {/* Decorative gradients */}
-                <div className="pointer-events-none absolute -right-32 -top-40 h-[600px] w-[600px] rounded-full bg-[var(--secondary)]/15 blur-[130px]" />
+                {/* Background Image */}
+                <div
+                    className="absolute inset-0 -z-20 bg-cover bg-center bg-no-repeat"
+                    style={{
+                        backgroundImage: "url('/ChatGPT Image Sep 14, 2026, 05_32_46 PM.png')",
+                    }}
+                />
+
+                {/* Navy Gradient Overlay */}
+                <div
+                    className="absolute inset-0 -z-10"
+                    style={{
+                        background:
+                            "linear-gradient(90deg, rgba(8,43,80,0.96) 0%, rgba(8,43,80,0.85) 2%, rgba(8,43,80,0.35) 10%)",
+                    }}
+                />
+
+                {/* Decorative Glow */}
+                <div className="pointer-events-none absolute -right-32 -top-40 h-[600px] w-[600px] rounded-full bg-[var(--secondary)]/10 blur-[130px]" />
 
                 {/* Decorative SVG */}
                 <svg
@@ -163,9 +180,9 @@ export default function ProjectsClient() {
                     fill="none"
                     aria-hidden="true"
                 >
-                    <circle cx="275" cy="275" r="240" stroke="var(--secondary)" />
-                    <circle cx="275" cy="275" r="175" stroke="var(--secondary)" />
-                    <circle cx="275" cy="275" r="110" stroke="var(--secondary)" />
+                    <circle cx="275" cy="275" r="240" stroke="white" />
+                    <circle cx="275" cy="275" r="175" stroke="white" />
+                    <circle cx="275" cy="275" r="110" stroke="white" />
                     <path
                         d="M0 275H550M275 0V550"
                         stroke="white"
@@ -173,9 +190,9 @@ export default function ProjectsClient() {
                     />
                 </svg>
 
-                <div className="relative mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12">
+                <div className="relative z-10 mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12">
                     {/* Breadcrumb */}
-                    <div className="projects-hero-reveal mb-12 flex items-center gap-2 text-sm text-white/60">
+                    <div className="projects-hero-reveal mb-12 flex items-center gap-2 text-sm text-white/80">
                         <Link href="/" className="hover:text-white">
                             Home
                         </Link>
@@ -183,27 +200,24 @@ export default function ProjectsClient() {
                         <span className="text-white">Our Projects</span>
                     </div>
 
+                    {/* Eyebrow */}
                     <div className="projects-hero-reveal mb-2 flex items-center gap-4">
                         <span className="h-px w-12 bg-[var(--secondary)]" />
 
-                        <span className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--secondary)]">
+                        <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#d8ac78]">
                             Our Work & Installations
                         </span>
                     </div>
 
+                    {/* Heading */}
                     <h1 className="projects-hero-reveal max-w-[1000px] text-[clamp(3.5rem,7vw,7.5rem)] font-semibold leading-[0.98] tracking-[-0.065em]">
-                        Our <span className="text-[var(--secondary)]">Projects.</span>
+                        Our <span className="text-white">Projects.</span>
                     </h1>
 
-                    {/* <p className="projects-hero-reveal mt-7 max-w-[650px] text-base leading-8 text-white/65 sm:text-lg">
-                        Explore our portfolio of thoughtfully designed and
-                        expertly installed restroom cubicle systems across
-                        commercial, corporate and institutional spaces.
-                    </p> */}
-
+                    {/* CTA */}
                     <a
                         href="#projects-gallery"
-                        className="projects-hero-reveal mt-9 inline-flex items-center gap-3 rounded-xl bg-[var(--secondary)] px-7 py-4 text-sm font-semibold text-white transition hover:brightness-110"
+                        className="projects-hero-reveal mt-9 inline-flex items-center gap-3 rounded-xl bg-[var(--secondary)] px-7 py-4 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:brightness-110"
                     >
                         Explore Our Work
                         <ArrowUpRight size={18} />

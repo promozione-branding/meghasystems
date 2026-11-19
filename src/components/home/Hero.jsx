@@ -49,12 +49,14 @@ export default function Hero() {
 
         let delay = isDeleting ? 40 : 85;
 
+        // Pause after completing text
         if (!isDeleting && displayText === currentText) {
-            delay = 2300;
+            delay = 1800;
         }
 
+        // Pause before typing next text
         if (isDeleting && displayText === "") {
-            delay = 350;
+            delay = 300;
         }
 
         const timer = setTimeout(() => {
@@ -71,10 +73,10 @@ export default function Hero() {
                 return;
             }
 
-            setDisplayText(
+            setDisplayText((prev) =>
                 isDeleting
-                    ? currentText.slice(0, -1)
-                    : currentText.slice(0, displayText.length + 1)
+                    ? prev.slice(0, -1)
+                    : currentText.slice(0, prev.length + 1)
             );
         }, delay);
 
@@ -223,18 +225,13 @@ export default function Hero() {
 
                     {/* Typing Text */}
                     <div className="hero-typing mt-8 flex min-h-[80px] w-full items-start justify-center">
-                        <h2 className="max-w-[1000px] text-center text-[clamp(24px,3.5vw,52px)] font-medium leading-[1.25] tracking-[-0.035em] text-[var(--secondary)]">
+                        <h2 className="max-w-[1000px] text-center text-[clamp(24px,3.5vw,52px)] font-medium leading-[1.25] tracking-[-0.035em] text-white">
                             <span aria-hidden="true">
-                                {reducedMotion
-                                    ? typingTexts[0]
-                                    : displayText}
+                                {reducedMotion ? typingTexts[0] : displayText}
                             </span>
 
                             {!reducedMotion && (
-                                <span
-                                    aria-hidden="true"
-                                    className="ml-1 inline-block animate-pulse font-light text-white"
-                                >
+                                <span className="ml-1 inline-block animate-pulse font-light text-[#fff]">
                                     |
                                 </span>
                             )}

@@ -293,7 +293,7 @@ export default function About() {
                         <h1 className="about-hero-item text-[clamp(3.4rem,7vw,7rem)] font-semibold leading-[1.02] tracking-[-0.04em]">
                             Spaces Designed
                             <br />
-                            <span className="text-[var(--secondary)]">
+                            <span className="text-[#fff]">
                                 To Last.
                             </span>
                         </h1>

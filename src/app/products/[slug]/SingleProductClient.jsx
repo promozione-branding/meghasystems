@@ -145,7 +145,7 @@ export default function SingleProductClient({
                 <div className="relative z-10 mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12">
 
                     {/* BREADCRUMB */}
-                    <nav className="product-reveal mb-9 flex flex-wrap items-center gap-2 text-xs text-white/60 sm:text-sm">
+                    <nav className="product-reveal mb-9 flex flex-wrap items-center gap-2 text-xs text-white/80 sm:text-sm">
                         <Link href="/" className="transition hover:text-white">
                             Home
                         </Link>
@@ -285,12 +285,12 @@ export default function SingleProductClient({
                             </h1>
 
                             {/* TAGLINE */}
-                            <p className="mt-4 text-lg font-medium text-white/70">
+                            <p className="mt-4 text-lg font-medium text-white/80">
                                 {category.excerpt}
                             </p>
 
                             {/* DESCRIPTION */}
-                            <p className="mt-6 max-w-[600px] text-sm leading-8 text-white/65 sm:text-base">
+                            <p className="mt-6 max-w-[600px] text-sm leading-8 text-white/80 sm:text-base">
                                 {product.shortDescription ||
                                     category.description}
                             </p>
@@ -298,17 +298,17 @@ export default function SingleProductClient({
                             {/* PRICE */}
                             {typeof product.price === "number" && (
                                 <div className="mt-8 flex flex-wrap items-center gap-4">
-                                    <span className="text-[clamp(2.5rem,4vw,3.6rem)] font-bold tracking-[-0.04em] text-[var(--secondary)]">
+                                    <span className="text-[clamp(2.5rem,4vw,3.6rem)] font-bold tracking-[-0.04em]">
                                         {formatPrice(product.price)}
                                     </span>
 
                                     {discount > 0 && (
                                         <>
-                                            <span className="text-lg text-white/45 line-through">
+                                            <span className="text-lg text-white/80 line-through">
                                                 {formatPrice(product.oldPrice)}
                                             </span>
 
-                                            <span className="rounded-full bg-[var(--secondary)]/15 px-4 py-2 text-xs font-semibold text-[var(--secondary)]">
+                                            <span className="rounded-full bg-[var(--secondary)]/90 px-4 py-2 text-xs font-semibold text-[#fff]">
                                                 Save {formatPrice(discount)}
                                             </span>
                                         </>
@@ -333,14 +333,14 @@ export default function SingleProductClient({
                                         >
                                             <Icon
                                                 size={22}
-                                                className="mx-auto mb-3 text-[var(--secondary)]"
+                                                className="mx-auto mb-3 text-[var(--)]"
                                             />
 
                                             <p className="text-xs font-semibold">
                                                 {item.title}
                                             </p>
 
-                                            <p className="mt-1 text-[11px] text-white/50">
+                                            <p className="mt-1 text-[11px] text-white/80">
                                                 {item.sub}
                                             </p>
                                         </div>
@@ -366,7 +366,7 @@ export default function SingleProductClient({
                                     href={whatsappLink}
                                     target={WHATSAPP_NUMBER ? "_blank" : undefined}
                                     rel={WHATSAPP_NUMBER ? "noopener noreferrer" : undefined}
-                                    className="flex min-h-[56px] items-center justify-center gap-3 rounded-xl border border-white/50 px-6 text-sm font-semibold text-white transition hover:border-[var(--secondary)] hover:bg-[var(--secondary)]"
+                                    className="flex min-h-[56px] items-center justify-center gap-3 rounded-xl border border-white/80 px-6 text-sm font-semibold text-white transition hover:border-[var(--secondary)] hover:bg-[var(--secondary)]"
                                 >
                                     <MessageCircle size={19} />
                                     Talk to an Expert
@@ -374,10 +374,10 @@ export default function SingleProductClient({
                             </div>
 
                             {/* PROJECT NOTE */}
-                            <div className="mt-6 flex items-start gap-3 text-sm text-white/60">
+                            <div className="mt-6 flex items-start gap-3 text-sm text-white/80">
                                 <Check
                                     size={18}
-                                    className="mt-0.5 shrink-0 text-[var(--secondary)]"
+                                    className="mt-0.5 shrink-0"
                                 />
 
                                 Custom sizes and configurations available
@@ -521,7 +521,7 @@ export default function SingleProductClient({
                                                         Regular Cubicle
                                                     </th>
 
-                                                    <th className="bg-[#dff3ef] px-4 py-4 font-semibold text-[var(--primary)]">
+                                                    <th className="bg-[var(--accent)] px-4 py-4 font-semibold text-white">
                                                         Accessible Cubicle
                                                     </th>
                                                 </tr>

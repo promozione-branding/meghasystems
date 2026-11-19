@@ -163,7 +163,7 @@ export default function ClientsOrbitSection() {
             className="relative isolate overflow-hidden border-t border-[var(--border-color)] bg-[var(--background)] py-10 text-[var(--text-primary)]"
         >
             {/* Background glow */}
-            <div className="pointer-events-none absolute left-1/2 top-[45%] h-[400px] w-[650px] -translate-x-1/2 rounded-full bg-[var(--secondary)]/[0.045] blur-[110px]" />
+            <div className="pointer-events-none absolute left-1/2 top-[45%] h-[400px] w-[650px] -translate-x-1/2 rounded-full bg-[#315b7b]/[0.045] blur-[110px]" />
 
             <div className="relative mx-auto max-w-[1500px] px-4 sm:px-8 lg:px-12">
                 {/* HEADER */}
@@ -218,17 +218,17 @@ export default function ClientsOrbitSection() {
                             >
                                 <stop
                                     offset="0%"
-                                    stopColor="#00a896"
+                                    stopColor="#315b7b"
                                     stopOpacity="0.08"
                                 />
                                 <stop
                                     offset="50%"
-                                    stopColor="#00a896"
+                                    stopColor="#315b7b"
                                     stopOpacity="0.65"
                                 />
                                 <stop
                                     offset="100%"
-                                    stopColor="#d9a000"
+                                    stopColor="#a8733d"
                                     stopOpacity="0.12"
                                 />
                             </linearGradient>
@@ -242,17 +242,17 @@ export default function ClientsOrbitSection() {
                             >
                                 <stop
                                     offset="0%"
-                                    stopColor="#00a896"
+                                    stopColor="#315b7b"
                                     stopOpacity="0.04"
                                 />
                                 <stop
                                     offset="50%"
-                                    stopColor="#00a896"
+                                    stopColor="#315b7b"
                                     stopOpacity="0.15"
                                 />
                                 <stop
                                     offset="100%"
-                                    stopColor="#00a896"
+                                    stopColor="#315b7b"
                                     stopOpacity="0.04"
                                 />
                             </linearGradient>
@@ -277,18 +277,18 @@ export default function ClientsOrbitSection() {
 
                         {/* Soft central glow */}
                         <ellipse
-                            className="orbit-glow"
+                            // className="orbit-glow"
                             cx="560"
                             cy="600"
                             rx="340"
                             ry="250"
-                            fill="#00a896"
+                            fill="#315b7b"
                             opacity="0.05"
                         />
 
                         {/* Small decorative dots */}
-                        <circle cx="100" cy="478" r="4" fill="#00a896" />
-                        <circle cx="1020" cy="478" r="4" fill="#d9a000" />
+                        <circle cx="100" cy="478" r="4" fill="#315b7b" />
+                        <circle cx="1020" cy="478" r="4" fill="#a8733d" />
                     </svg>
 
                     {/* FIVE CLIENT LOGOS */}
@@ -308,7 +308,7 @@ export default function ClientsOrbitSection() {
                                     key={client.id}
                                     className="animate-[clientLogoEnter_650ms_ease-out_both] w-full"
                                 >
-                                    <div className="relative mx-auto aspect-square w-full max-w-[140px] overflow-hidden rounded-[18px] border border-[var(--border-color)] bg-white p-2 shadow-[0_12px_35px_rgba(0,0,0,0.07)] transition-all duration-500 hover:-translate-y-2 hover:border-[var(--secondary)] hover:shadow-[0_20px_45px_rgba(0,168,150,0.12)] sm:rounded-[24px] sm:p-3">
+                                    <div className="relative mx-auto aspect-square w-full max-w-[140px] overflow-hidden rounded-[18px] border border-[var(--border-color)] bg-white p-2 shadow-[0_12px_35px_rgba(0,0,0,0.07)] transition-all duration-500 hover:-translate-y-2 hover:border-[var(--secondary)] hover:shadow-[0_20px_45px_rgba(8,43,80,0.14)] sm:rounded-[24px] sm:p-3">
                                         <Image
                                             src={client.src}
                                             alt={client.name}

@@ -133,12 +133,12 @@ export default function Footer() {
             {/* BIG OUTLINED BACKGROUND TEXT */}
             <div
                 aria-hidden="true"
-                className="footer-watermark pointer-events-none absolute left-1/2 top-0 z-0 w-full -translate-x-1/2 overflow -hidden text-center"
+                className="footer-watermark pointer-events-none absolute left-1/2 top-0 z-0 w-full -translate-x-1/2 overflow-idden text-center"
             >
                 <span
                     className="block whitespace-nowrap text-[clamp(80px,12.5vw,230px)] font-black leading-[0.95] tracking-[-0.045em] text-transparent"
                     style={{
-                        WebkitTextStroke: "1px rgba(0,168,150,0.22)",
+                        WebkitTextStroke: "1px rgba(168,115,61,0.50)",
                     }}
                 >
                     Megha Systems
@@ -220,7 +220,7 @@ export default function Footer() {
                             <div className="flex items-start gap-4">
                                 <MapPin
                                     size={23}
-                                    className="mt-0.5 shrink-0 text-[var(--accent)]"
+                                    className="mt-0.5 shrink-0 text-[var(--secondary)]"
                                 />
                                 <p className="text-[14px] leading-6 text-white/75">
                                     Megha Systems
@@ -235,7 +235,7 @@ export default function Footer() {
                             >
                                 <Phone
                                     size={22}
-                                    className="shrink-0 text-[var(--accent)]"
+                                    className="shrink-0 text-[var(--secondary)]"
                                 />
                                 +91 98765 43210
                             </a>
@@ -246,7 +246,7 @@ export default function Footer() {
                             >
                                 <Mail
                                     size={22}
-                                    className="shrink-0 text-[var(--accent)]"
+                                    className="shrink-0 text-[var(--secondary)]"
                                 />
                                 info@meghasystems.com
                             </a>

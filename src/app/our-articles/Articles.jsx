@@ -303,7 +303,7 @@ export default function ArticlesClient() {
 
           <h1 className="articles-hero-reveal max-w-[1000px] text-[clamp(3.5rem,7vw,7.5rem)] font-semibold leading-[0.98] tracking-[-0.025em]">
             Articles &{" "}
-            <span className="text-[var(--secondary)]">Insights.</span>
+            <span className="text-white">Insights.</span>
           </h1>
 
           {/* <p className="articles-hero-reveal mt-7 max-w-[650px] text-base leading-8 text-white/65 sm:text-lg">

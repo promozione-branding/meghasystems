@@ -277,17 +277,36 @@ export default function AllProductsClient({ categories = [] }) {
         <main className="min-h-screen bg-white text-[var(--primary)]">
             <section
                 ref={heroRef}
-                className="relative overflow-hidden bg-[var(--primary)] pb-20 pt-32 text-white sm:pb-24 lg:pt-40"
+                className="relative isolate overflow-hidden bg-[var(--primary)] pb-10 pt-32 text-white sm:pb-16 lg:pt-40"
             >
-                {/* Background effects */}
-                <div className="pointer-events-none absolute -right-32 -top-48 h-[650px] w-[650px] rounded-full bg-[var(--secondary)]/15 blur-[130px]" />
-                <div className="pointer-events-none absolute -bottom-48 left-0 h-[450px] w-[450px] rounded-full bg-[var(--secondary)]/10 blur-[110px]" />
+                {/* Background Image */}
+                <div
+                    className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+                    style={{
+                        backgroundImage: "url('/products/Maxi.webp')",
+                    }}
+                />
 
-                <div className="relative mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12">
+                {/* Dark Navy Gradient Overlay */}
+                <div
+                    className="absolute inset-0 z-[1]"
+                    style={{
+                        background:
+                            "linear-gradient(90deg, rgba(8,43,80,0.97) 0%, rgba(8,43,80,0.88) 2%, rgba(8,43,80,0.55) 20%, rgba(8,43,80,0.35) 60%)",
+                    }}
+                />
+
+                {/* Background Effects */}
+                <div className="pointer-events-none absolute -right-32 -top-48 z-[2] h-[650px] w-[650px] rounded-full bg-[var(--secondary)]/10 blur-[130px]" />
+
+                <div className="pointer-events-none absolute -bottom-48 left-0 z-[2] h-[450px] w-[450px] rounded-full bg-white/5 blur-[110px]" />
+
+                {/* Main Content */}
+                <div className="relative z-10 mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12">
 
                     {/* Breadcrumb */}
-                    <div className="products-hero-reveal mb-12 flex items-center gap-2 text-sm text-white/60">
-                        <Link href="/" className="hover:text-white">
+                    <div className="products-hero-reveal mb-12 flex items-center gap-2 text-sm text-white/80">
+                        <Link href="/" className="transition-colors hover:text-white">
                             Home
                         </Link>
 
@@ -297,63 +316,61 @@ export default function AllProductsClient({ categories = [] }) {
                     </div>
 
                     <div className="grid items-end gap-10 lg:grid-cols-[1.2fr_0.8fr]">
+                        {/* Left Content */}
                         <div>
                             <div className="products-hero-reveal mb-5 flex items-center gap-4">
                                 <span className="h-px w-12 bg-[var(--secondary)]" />
 
-                                <span className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--secondary)]">
+                                <span className="text-xs font-bold uppercase tracking-[0.3em] text-[#d8ac78]">
                                     Explore Our Collection
                                 </span>
                             </div>
 
                             <h1 className="products-hero-reveal max-w-[900px] text-[clamp(3.5rem,7vw,7.5rem)] font-semibold leading-[0.98] tracking-[-0.065em]">
-                                Our <span className="text-[var(--secondary)]">Products.</span>
+                                Our <span className="text-white">Products.</span>
                             </h1>
-
-                            <p className="products-hero-reveal mt-7 max-w-[650px] text-base leading-8 text-white/65 sm:text-lg">
-                                Discover high-performance toilet cubicle systems
-                                designed for modern commercial, institutional,
-                                and public restroom spaces.
-                            </p>
 
                             <button
                                 type="button"
                                 onClick={scrollToProducts}
-                                className="products-hero-reveal mt-9 inline-flex items-center gap-3 rounded-xl bg-[var(--secondary)] px-7 py-4 text-sm font-semibold text-white transition hover:brightness-110"
+                                className="products-hero-reveal mt-9 inline-flex items-center gap-3 rounded-xl bg-[var(--secondary)] px-7 py-4 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:brightness-110"
                             >
                                 Explore Products
                                 <ArrowUpRight size={19} />
                             </button>
                         </div>
 
-                        {/* Hero stats */}
+                        {/* Hero Stats */}
                         <div className="products-hero-reveal grid grid-cols-2 gap-4 lg:justify-self-end">
-                            <div className="min-w-[150px] rounded-2xl border border-white/15 bg-white/5 p-6 backdrop-blur-sm">
+
+                            {/* Products Card */}
+                            <div className="min-w-[150px] rounded-2xl border border-white/20 bg-[#082b50] p-6 shadow-lg">
                                 <Layers3
                                     size={26}
-                                    className="mb-5 text-[var(--secondary)]"
+                                    className="mb-5 text-[#d8ac78]"
                                 />
 
-                                <p className="text-4xl font-semibold tracking-tight">
+                                <p className="text-4xl font-semibold tracking-tight text-white">
                                     {String(allProducts.length).padStart(2, "0")}
                                 </p>
 
-                                <p className="mt-2 text-xs uppercase tracking-[0.15em] text-white/55">
+                                <p className="mt-2 text-xs uppercase tracking-[0.15em] text-white/65">
                                     Products
                                 </p>
                             </div>
 
-                            <div className="min-w-[150px] rounded-2xl border border-white/15 bg-white/5 p-6 backdrop-blur-sm">
+                            {/* Categories Card */}
+                            <div className="min-w-[150px] rounded-2xl border border-white/20 bg-[#082b50] p-6 shadow-lg">
                                 <ShieldCheck
                                     size={26}
-                                    className="mb-5 text-[var(--secondary)]"
+                                    className="mb-5 text-[#d8ac78]"
                                 />
 
-                                <p className="text-4xl font-semibold tracking-tight">
+                                <p className="text-4xl font-semibold tracking-tight text-white">
                                     {String(categories.length).padStart(2, "0")}
                                 </p>
 
-                                <p className="mt-2 text-xs uppercase tracking-[0.15em] text-white/55">
+                                <p className="mt-2 text-xs uppercase tracking-[0.15em] text-white/65">
                                     Categories
                                 </p>
                             </div>

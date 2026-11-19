@@ -12,7 +12,7 @@ const CUBICLE_LAYERS = [
         number: 1,
         title: "SS Adjustable Leg",
         subtitle: "Adjustable stainless steel support leg",
-        image: "/hardware/ss-adjustable-leg.webp",
+        image: "/img/1.jpg",
         x: "54.5%",
         y: "85%",
     },
@@ -21,7 +21,7 @@ const CUBICLE_LAYERS = [
         number: 2,
         title: "Door Stopper",
         subtitle: "Floor-mounted door protection stopper",
-        image: "/hardware/door-stopper.webp",
+        image: "/img/2.jpg",
         x: "57%",
         y: "63%",
     },
@@ -30,7 +30,7 @@ const CUBICLE_LAYERS = [
         number: 3,
         title: "Top Rail",
         subtitle: "Strong aluminum top support",
-        image: "/hardware/top-rail.webp",
+        image: "/img/3.jpg",
         x: "50%",
         y: "18%",
     },
@@ -39,7 +39,7 @@ const CUBICLE_LAYERS = [
         number: 4,
         title: "U Channel",
         subtitle: "Silver-Ion Surface Shield",
-        image: "/hardware/u-channel.webp",
+        image: "/img/4.jpg",
         x: "94%",
         y: "40%",
     },
@@ -48,7 +48,7 @@ const CUBICLE_LAYERS = [
         number: 5,
         title: "Indicator Lock",
         subtitle: "Secure internal privacy locking mechanism",
-        image: "/hardware/indicator-lock.webp",
+        image: "/img/5.jpg",
         x: "80%",
         y: "53%",
     },
@@ -57,7 +57,7 @@ const CUBICLE_LAYERS = [
         number: 6,
         title: "Door Knob",
         subtitle: "Durable stainless steel door knob",
-        image: "/hardware/door-knob.webp",
+        image: "/img/6.jpg",
         x: "19%",
         y: "53%",
     },
@@ -163,7 +163,7 @@ export default function CubicleHotspots() {
 
                             {/* HOVER POPUP */}
                             <div
-                                className={`absolute z-30 w-[230px] transition-all duration-300 sm:w-[290px] ${popupVertical === "bottom"
+                                className={`absolute z-50 w-[230px] transition-all duration-300 sm:w-[290px] ${popupVertical === "bottom"
                                     ? "bottom-full mb-4"
                                     : "top-full mt-4"
                                     } ${popupAlign === "right"
@@ -184,7 +184,7 @@ export default function CubicleHotspots() {
                                             alt={item.title}
                                             fill
                                             sizes="290px"
-                                            className="object-contain p-3"
+                                            className="object-contain p-"
                                         />
 
                                         <span className="absolute left-3 top-3 rounded-lg bg-[var(--primary)] px-3 py-1.5 text-[11px] font-bold text-white">

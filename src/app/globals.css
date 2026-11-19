@@ -1,22 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  /* Brand colors */
-  --primary: #171c20;
-  --secondary: #00a896;
-  --accent: #d9a000;
+  /* Brand Colors */
+  --primary: #082b50;       /* Royal Navy Blue */
+  --secondary: #a8733d;     /* Premium Bronze Brown */
+  --accent: #473326;        /* Dark Walnut */
 
   /* Backgrounds */
-  --background: #f5f4f0;
+  --background: #f7f5f1;
   --surface: #ffffff;
 
   /* Text */
-  --text-primary: #171c20;
-  --text-secondary: #6b7280;
+  --text-primary: #182c40;
+  --text-secondary: #706c68;
   --text-light: #ffffff;
 
   /* Borders */
-  --border-color: #e5e7eb;
+  --border-color: #e7dfd5;
 }
 
 body {

@@ -122,7 +122,7 @@ export default function WhyChooseUs() {
                             Choose <span className="text-[var(--secondary)]">Us.</span>
                         </h2>
 
-                        <p className="why-reveal mt-6 max-w-[520px] text-sm leading-7 text-[var(--text-secondary)] sm:text-base">
+                        <p className="why-reveal mt-6 max-w-[520px] text-sm leading-7 text-[var(--text-primary)] sm:text-base">
                             At Megha Systems, we combine innovative designs,
                             high-quality materials, and years of expertise to
                             deliver dependable restroom cubicle solutions.
@@ -161,7 +161,7 @@ export default function WhyChooseUs() {
                                 type="button"
                                 onClick={() => setVideoOpen(true)}
                                 aria-label="Play Megha Systems introduction video"
-                                className="group absolute bottom-[-18px] left-1/2 z-10 flex h-20 w-20 -translate-x-1/2 items-center justify-center rounded-full border-[8px] border-[var(--background)] bg-[var(--secondary)] text-white shadow-lg transition-transform duration-300 hover:scale-110 sm:h-24 sm:w-24"
+                                className="group absolute bottom-[-18px] left-1/2 z-10 flex h-20 w-20 -translate-x-1/2 items-center justify-center rounded-full border-[8px] border-[var(--background)] bg-[var(--primary)] text-white shadow-lg transition-transform duration-300 hover:scale-110 sm:h-24 sm:w-24"
                             >
                                 <Play
                                     size={28}
@@ -188,7 +188,7 @@ export default function WhyChooseUs() {
 
                                         <div className="absolute -top-16 h-36 w-44 rounded-full bg-[var(--secondary)]/10 transition-colors duration-500 group-hover:bg-[var(--secondary)]/15 sm:h-44 sm:w-52" />
 
-                                        <div className="absolute top-12 flex h-16 w-16 items-center justify-center rounded-full bg-[var(--background)] text-[var(--secondary)] shadow-sm transition-all duration-500 bg-[var(--secondary)] text-white sm:top-16 sm:h-20 sm:w-20">
+                                        <div className="absolute top-12 flex h-16 w-16 items-center justify-center rounded-full bg-[var(--primary)] text-[var(--secondary)] shadow-sm transition-all duration-500 bg-[var(--primary)] text-white sm:top-16 sm:h-20 sm:w-20">
                                             <Icon size={28} strokeWidth={1.7} />
                                         </div>
                                     </div>
@@ -201,12 +201,12 @@ export default function WhyChooseUs() {
                                         {feature.title}
                                     </h3>
 
-                                    <p className="max-w-[230px] text-xs leading-6 text-[var(--text-secondary)] sm:text-sm">
+                                    <p className="max-w-[230px] text-xs leading-6 text-[var(--text-primary)] sm:text-sm">
                                         {feature.description}
                                     </p>
 
                                     {/* Bottom accent */}
-                                    <span className="absolute bottom-0 left-1/2 h-[3px] w-0 -translate-x-1/2 bg-[var(--secondary)] transition-all duration-500 w-1/2" />
+                                    <span className="absolute bottom-0 left-1/2 h-[3px] w-0 -translate-x-1/2 bg-[var(--primary)] transition-all duration-500 w-1/2" />
                                 </div>
                             );
                         })}
